@@ -13,5 +13,13 @@ li{
     font-family: "Microsoft Yahei","微软雅黑",verdana;
     color: #333;
 }
+.name{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+    float: left;
+    margin-right: 20px;
+}
 @import "header";
+@import "creat";
 @import "footer";
