@@ -1,0 +1,196 @@
+.tb{
+    
+    height: 36px;
+    line-height: 36px;
+    background-color: #333;
+    z-index: 4;
+    & a:hover{
+        color: #fff;
+    }
+  
+    
+}
+.tb-left{
+    float: left;
+    overflow: hidden;
+}
+.tb-left-content{
+    cursor: pointer;
+    float: left;
+    position: relative;
+    & a{   
+        font-size: 12px;
+        height: 36px;
+        line-height: 36px;
+        color: #ccc;
+    }
+}
+.tb-left-ul{  
+    float: left;
+    margin-left: 20px;
+    overflow: hidden;
+    height: 36px;
+    line-height: 36px;
+    font-size: 12px;
+    cursor: pointer;
+    background: url(../images/laba.gif) center left no-repeat;
+}
+.tb-left-ul ul{
+    position: relative;
+    & li{
+        padding-left: 26px;
+        height: 36px;
+    }
+    & a{
+        color: #b4a078;
+        font-size: 12px;
+       }
+}
+.tb-right{
+    float: right;
+    & ul{
+        float: left;
+    }
+    & li{
+        float: left;
+        height: 36px;
+        line-height: 36px;
+        & .icon-app{
+
+            display:inline-block;
+            vertical-align: middle;
+            height: 11px;
+            width: 7px;
+background: url(../images/logo1.png) 0 0 no-repeat;       
+        }
+        & .icon-jiantou{
+            display: inline-block;
+            height: 5px;
+            width: 11px;
+            margin-right: 10px;
+            vertical-align: middle;
+            background: url(../images/logo1.png) 0 -321px no-repeat;       
+        }
+       
+    }
+    & li::before{
+        content: '';
+        display: inline-block;
+       
+        height: 16px;
+        border-left: 1px solid #5c5c5c;
+        vertical-align: middle;
+        
+    }
+    & a{
+         padding:0 10px;
+        font-size: 12px;
+        display: inline-block;
+        color: #ccc;
+    }
+}
+.kf:hover .icon-jiantou{
+    transform: rotate(180deg);
+}
+.tb-main{
+    & .wrap{position: relative;}
+}
+.logobox{
+ position: relative;
+}
+.logo{
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 455px;
+    background: url(../images/logo1.png) 0 -146px no-repeat;
+    height: 60px;
+    width: 180px;
+}
+.tb-nav{
+    line-height: 1;
+    font-weight: 700;
+    position: absolute;
+    height: 30px;
+    bottom: 21px;
+    width: 100%;
+    & li{
+        float: left;
+        position: relative;
+        margin-top: 6px;
+        padding: 0 24px;
+        font-size: 14px;
+        &:hover > a{
+            color: #b4a078;
+            border-bottom: 3px solid #b4a078;    display: block;
+            padding-bottom: 6px;
+        }
+    }
+    & a{
+        font-family: "Microsoft Yahei",verdana;
+        color: #333;
+    }
+}
+
+
+
+
+
+
+
+.search{
+    & input{
+        position: absolute;
+        right: 120px;
+        top: 75px;
+        z-index: 1;
+        display: block;
+        height: 22px;
+        line-height: 22px;
+        border: 0;
+        border-bottom: 1px solid #D8CEBC;
+        font-size: 12px;
+        width: 252px;
+        outline: 0;
+        overflow: hidden;
+        background: 0 0;
+    }
+    & i{
+        display: block;
+        background: url(../images/logo1.png) 0 -291px no-repeat;
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        right: 95px;
+        bottom: 105px;
+    }
+    &:hover i{
+        background-position: 0 -261px;
+    }
+}
+.cart{
+    position: absolute;
+    bottom: 105px;
+    right: 50px;
+    & i{
+        display: block;
+        background: url(../images/logo1.png) 0 -113px no-repeat;
+        height: 23px;
+        width: 23px;
+    }
+    &:hover i{
+            background-position: 0 -80px;
+        }
+    & span{
+        position: absolute;
+        top: -10px;
+        right: -8px;
+        color: #fff;
+        text-align: center;
+        line-height: 20px;
+        z-index: 1;
+        height: 19px;
+        width: 19px;
+        background: url(../images/logo1.png) 0 -51px no-repeat;
+        }
+}

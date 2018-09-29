@@ -1,0 +1,226 @@
+.f-t{
+    padding-top: 60px;
+    padding-bottom: 34px;
+    height: 299px;
+    border-top: 1px solid #e8e8e8;
+
+}
+.f-t-left,.f-t-main-t,.f-t-right{
+    width: 33.33333%;
+    height: 204px;
+    float: left;
+    border-left: 1px solid #e9e9e9;  text-align: center;
+    & h4{
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 28px;
+        line-height: 1;    
+    }
+    & span{
+        display: block;
+        margin-top: 10px;
+        color: #333;
+        &:hover{
+            color:#b4a078;
+        }
+    }
+}
+.f-t-left a{
+        display:inline-block;
+        width: 80px;
+        height: 100px;
+        font-size: 14px;
+        background-color: #fff;
+        padding-top: 25px;
+        border: 1px solid #E8E8E8;
+         line-height: 26px;
+         margin: 0 10px;
+   
+       
+    }
+
+.icon-left{
+    background:url(../images/footer1.png) 0 -232px no-repeat;
+    &:hover{
+        background-position:0 -196px; 
+    }
+}
+.icon-right{
+       background:url(../images/footer1.png) 0 -98px no-repeat;
+       &:hover{
+        background-position:0 -61px; 
+    }
+}
+
+.icon-right,.icon-left{
+    display: block;
+    height: 26px;
+    width: 31px;
+    margin-left: 25px;
+}
+
+.f-t-main-t{
+    position: relative;
+    padding: 0 37px;
+    text-align: center;
+    line-height: 1;
+    & p{
+        text-align: left;
+        font-size: 13px;
+        line-height: 23px;
+        margin-bottom: 22px;
+    }
+    & span{
+        margin-right: 15px;
+        margin-bottom: 0;
+        font-size: 14px;
+        line-height: 32px;
+        float: left;
+    
+    }
+    & i{
+  
+        display: block;
+        height: 32px;
+        width: 32px;
+        float: left;
+        padding:0 24px;
+        margin-top: 10px;
+        background-image: url(../images/footer1.png);
+    }
+}
+
+
+.erweima{
+    position: absolute;
+    display:none;
+    top: 178px;
+    left: 77px;
+    width: 123px;
+    padding-top: 5px;
+    & .ewmbox{
+        position: relative;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        padding: 10px;
+        box-shadow: 0 0 3px 0 rgba(0,0,0,.2);
+    & b{
+        display: block;
+        position: absolute;
+        top: -7px;
+        right: 0;
+        left: 0;
+        height: 7px;
+        width: 12px;
+        background: url(../images/logo1.png) 0 -336px no-repeat;
+        margin: auto;
+    }
+    }
+
+}
+.icon-yx{
+    background-position:0 -413px;
+}
+.icon-yx:hover
+ .erweima{
+     display: block;
+ }
+
+.icon-wx{
+    background-position:0 -371px;
+}
+.icon-wx:hover
+.erweima{
+    display: block;
+    left: 125px;
+
+}
+.icon-xl{
+    background-position:0 -268px;
+}
+.f-t-right{
+    & p{
+        color: #b4a078;
+        font-size: 12px;
+        margin-top: 3px;
+    }
+}
+.f-b{
+    height: 204px;
+    padding-top: 37px;
+    background-color: #414141;
+}
+.f-b-top{
+    overflow: hidden;
+    margin-bottom: 30px!important;
+   & li{    
+    float: left;
+    width: 33.333333%;
+    text-align: center;
+
+    & p{
+        display: inline-block;
+        color: #fff;
+        font-size: 18px;
+        line-height: 51px;
+    }
+    & i{
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 17px;
+        height: 51px;
+        width: 51px;
+        background-image: url(../images/footer1.png);
+    }
+ }
+}
+.wuyou{
+    background-position: 0 -310px;
+}
+.mianyou{
+    background-position: 0 0;
+}
+.bz{
+    background-position: 0 -135px;
+}
+.hr{
+    height: 1px;
+    margin-bottom: 27px;
+    background-color: #4f4f4f;
+    border: 0;
+}
+.footer-nav{
+    text-align: center;
+    & a{
+      font-size: 12px;
+       color: #999;
+    } 
+       & b{
+        margin: auto 13px;
+        color: #999;
+        font-weight: bold;
+       }
+}
+.f-b-bot{
+    position: relative;
+}
+.f-b-bot p{
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    margin-top: 5px;
+    & a{
+        font-size: 12px;
+        color: #999;
+    }
+}
+.f-b-bot > a{
+    display: block;
+    width: 36px;
+    position: absolute;
+    right: 74px;
+    top: -4px;
+    & img{
+        width: 100%;
+    }
+}
