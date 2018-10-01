@@ -1,5 +1,9 @@
+.manufacturer:hover img {
+  transform: scale(1.05); }
+
 .m-head-top {
-  padding-bottom: 50px; }
+  padding-bottom: 28px;
+  overflow: hidden; }
 .m-head-top::after {
   content: " ";
   display: table; }
@@ -31,5 +35,8 @@
   padding-top: 13px;
   display: inline-block;
   line-height: 1; }
+
+.slick-list .slick-track {
+  overflow: hidden; }
 
 /*# sourceMappingURL=other.css.map */

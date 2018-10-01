@@ -1,7 +1,12 @@
 @charset "utf-8";
+// 图片放大公共部分（：hover）
+.manufacturer:hover img{
+    transform: scale(1.05);
+}
 // 品牌制造商公共部分
 .m-head-top{
-    padding-bottom: 50px;
+    padding-bottom: 28px;
+    overflow: hidden;
     &::after{
         content: " ";
         display: table;
@@ -40,3 +45,7 @@
     line-height: 1;
 }
 // 新品首发公共部分
+.slick-list .slick-track{
+    overflow: hidden;
+}
+// 人气推荐公共部分

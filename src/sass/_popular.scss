@@ -1,0 +1,88 @@
+.popular{
+    padding: 60px 0;
+    background: #f4f0ea;
+}
+.f-left{
+    & ul{
+        float: left;
+    }
+}
+.item{
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    width: 70px;
+    height: 28px;
+    line-height: 28px;
+    margin-right: 55px;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    & a:hover{  
+        color: #b4a078;
+}
+}
+.active.item{
+    border-bottom: 2px solid #b4a078;
+    & a{
+        color: #b4a078;
+    }
+   
+}
+.popularitem{
+    position: relative;
+    background-color: #fff;
+    width: 223px;
+    height: 260px;
+    float: left;
+    margin-left: 10px;
+    text-align: center;
+    & .prdtTags .itemTag {
+        font-size: 12px;
+    }
+    &:hover .img{
+        transition: all 1s;
+    transform: scale(1.05);
+    }
+}
+.popularitem-down{
+    margin-top: 10px;
+}
+.m-popular{
+    width: 390px;
+    height: 530px;
+    margin-left: 0;
+    & .img{
+        width: 320px;
+        height: 320px;
+        margin: 40px 35px;
+    }
+    & .hd{
+        height: 405px;
+        margin-bottom: 18px;
+        background: 0 0;
+        border-bottom: 1px solid #F4F0EA;
+    }
+    & .bd .new-name a span{
+        font-size: 18px;
+    }
+    & .retailPrice{
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+}
+.m-popular-small{
+    & .hd{
+        height: 175px;
+        margin-bottom: 18px;
+        background: 0 0;
+        border-bottom: 1px solid #F4F0EA;
+    
+    }
+    & .bd .new-name a span{
+        font-size: 13px;
+    }
+
+}
+

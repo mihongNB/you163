@@ -272,6 +272,20 @@ li {
   z-index: 3;
   color: #666; }
 
+.GC-top {
+  padding-bottom: 58px; }
+.GC-top::after {
+  content: " ";
+  display: table; }
+.GC-top > a {
+  display: inline-block;
+  line-height: 1;
+  margin-left: 30px;
+  padding-top: 14px;
+  float: right; }
+.GC-top > a:hover {
+  color: #b4a078; }
+
 .name {
   position: relative;
   font-size: 24px;
@@ -322,7 +336,204 @@ li {
 
 .newstar {
   height: 510px;
-  padding-top: 60px; }
+  padding-top: 60px;
+  position: relative; }
+
+.slickWidth {
+  width: 1090px;
+  overflow: hidden; }
+.slickWidth .m-newItemSlick {
+  width: 1100px; }
+
+.m-product {
+  line-height: 1;
+  text-align: center;
+  font-size: 13px;
+  width: 245px;
+  height: 100%;
+  position: relative; }
+.m-product:hover {
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+  background-color: #f4f0ea; }
+.m-product:hover .img {
+  display: none !important; }
+.m-product:hover .colorNum {
+  display: none; }
+
+.hd .colorNum {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 20px;
+  font-size: 12px;
+  color: #a7936e;
+  border: 1px solid #b3a07d;
+  border-radius: 5px;
+  padding: 0 4px;
+  line-height: 18px;
+  background-color: #f4f0ea; }
+
+.new-name {
+  margin-bottom: 4px;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0 10px; }
+.new-name > a:hover span {
+  color: #b4a078; }
+
+.imgScene {
+  background: #f4f4f4;
+  display: inline !important; }
+
+.hd {
+  margin-bottom: 8px;
+  height: 256px;
+  background-color: transparent;
+  overflow: hidden; }
+
+.imgWrap {
+  display: block; }
+
+.bd .prdtTags {
+  height: 20px;
+  width: 200px;
+  margin: 0 auto 3px;
+  overflow: hidden; }
+.bd .prdtTags span {
+  display: inline-block;
+  color: #fff;
+  height: 20px;
+  line-height: 20px;
+  padding: 0 5px;
+  margin-left: 5px;
+  background-color: #e36844; }
+.bd .prdtTags .hot {
+  background: #F28F2D; }
+
+.itemList {
+  overflow: hidden; }
+
+.slick-slide {
+  float: left;
+  margin-right: 30px; }
+
+.slick-left, .slick-right {
+  position: absolute;
+  background-color: #E7E2D7;
+  z-index: 9;
+  top: 200px !important;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  opacity: 0.8;
+  border-radius: 500px;
+  background-image: url(../images/xiaotubiao.png);
+  background-repeat: no-repeat; }
+
+.slick-left {
+  left: 60px;
+  background-position: 0 -4984px; }
+
+.slick-right {
+  right: 70px;
+  background-position: 0 -5164px; }
+
+.price {
+  font-size: 13px;
+  line-height: 13px;
+  color: #d4282d;
+  padding: 1px 0 9px;
+  margin: 0; }
+.price .retailPrice {
+  color: #d4282d; }
+.price .counterPrice {
+  text-decoration: line-through;
+  font-size: 12px;
+  color: #999;
+  top: 2px; }
+.price .tagName {
+  border-left: 1px solid #999;
+  padding-left: 10px;
+  margin-left: 7px;
+  line-height: 13px;
+  height: 13px;
+  display: inline-block;
+  overflow: hidden; }
+.price .tagName > a {
+  color: #999; }
+
+.popular {
+  padding: 60px 0;
+  background: #f4f0ea; }
+
+.f-left ul {
+  float: left; }
+
+.item {
+  float: left;
+  text-align: center;
+  font-size: 14px;
+  width: 70px;
+  height: 28px;
+  line-height: 28px;
+  margin-right: 55px;
+  position: relative;
+  z-index: 2;
+  cursor: pointer; }
+.item a:hover {
+  color: #b4a078; }
+
+.active.item {
+  border-bottom: 2px solid #b4a078; }
+.active.item a {
+  color: #b4a078; }
+
+.popularitem {
+  position: relative;
+  background-color: #fff;
+  width: 223px;
+  height: 260px;
+  float: left;
+  margin-left: 10px;
+  text-align: center; }
+.popularitem .prdtTags .itemTag {
+  font-size: 12px; }
+.popularitem:hover .img {
+  transition: all 1s;
+  transform: scale(1.05); }
+
+.popularitem-down {
+  margin-top: 10px; }
+
+.m-popular {
+  width: 390px;
+  height: 530px;
+  margin-left: 0; }
+.m-popular .img {
+  width: 320px;
+  height: 320px;
+  margin: 40px 35px; }
+.m-popular .hd {
+  height: 405px;
+  margin-bottom: 18px;
+  background: 0 0;
+  border-bottom: 1px solid #F4F0EA; }
+.m-popular .bd .new-name a span {
+  font-size: 18px; }
+.m-popular .retailPrice {
+  font-size: 18px;
+  line-height: 40px; }
+
+.m-popular-small .hd {
+  height: 175px;
+  margin-bottom: 18px;
+  background: 0 0;
+  border-bottom: 1px solid #F4F0EA; }
+.m-popular-small .bd .new-name a span {
+  font-size: 13px; }
 
 .f-t {
   padding-top: 60px;

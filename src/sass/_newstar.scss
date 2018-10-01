@@ -1,4 +1,153 @@
 .newstar{
     height: 510px;
     padding-top: 60px;
+    position: relative;
+}
+.slickWidth{
+    width: 1090px;
+    overflow: hidden;
+    & .m-newItemSlick{
+        width: 1100px;
+    }
+}
+.m-product{
+    line-height: 1;
+    text-align: center;
+    font-size: 13px;
+    width: 245px;
+    height: 100%;
+    position: relative;
+    &:hover{
+        box-shadow: 1px 1px 8px rgba(0,0,0,.2);
+        background-color: #f4f0ea;
+    }
+    &:hover .img{
+        display: none!important;
+    }
+    &:hover .colorNum{
+        display: none;
+    }
+}
+.hd .colorNum{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        height: 20px;
+        font-size: 12px;
+        color: #a7936e;
+        border: 1px solid #b3a07d;
+        border-radius: 5px;
+        padding: 0 4px;
+        line-height: 18px;
+        background-color: #f4f0ea;
+    }
+
+ .new-name{
+        margin-bottom: 4px;
+        height: 20px;
+        line-height: 20px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding: 0 10px;
+        & >a:hover span{
+            color:  #b4a078;
+        }
+    }
+.imgScene{
+        background:#f4f4f4;
+        display:inline!important;
+    }
+
+.hd{
+    margin-bottom: 8px;
+    height: 256px;
+    background-color: transparent;
+    overflow: hidden;
+}
+.imgWrap{
+    display: block;
+}
+.bd .prdtTags{
+    height: 20px;
+    width: 200px;
+    margin: 0 auto 3px;
+    overflow: hidden;
+    & span{
+        display: inline-block;
+        color: #fff;
+        height: 20px;
+        line-height: 20px;
+        padding: 0 5px;
+        margin-left: 5px;
+        background-color: #e36844;
+
+    }
+    & .hot{
+        background:  #F28F2D;
+    }
+
+}
+
+
+.itemList{
+    overflow: hidden;
+
+}
+.slick-slide{
+    float: left;
+    margin-right: 30px;
+   
+}
+.slick-left,.slick-right {
+    position: absolute;
+    background-color: #E7E2D7;
+    z-index: 9;
+    top: 200px!important;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    opacity: 0.8;
+    border-radius: 500px;
+    background-image: url(../images/xiaotubiao.png);
+    background-repeat: no-repeat;
+}
+.slick-left{
+    left: 60px;
+    background-position: 0 -4984px;
+}
+.slick-right{
+    right: 70px;
+    
+    background-position: 0 -5164px;
+}
+.price{
+    
+        font-size: 13px;
+        line-height: 13px;
+        color: #d4282d;
+        padding: 1px 0 9px;
+        margin: 0;
+        & .retailPrice{
+            color: #d4282d;
+        }
+        & .counterPrice{
+            text-decoration: line-through;
+            font-size: 12px;
+            color: #999;
+            top: 2px;
+        }
+        & .tagName{
+            border-left: 1px solid #999;
+            padding-left: 10px;
+            margin-left: 7px;
+            line-height: 13px;
+            height: 13px;               
+            display: inline-block;
+            overflow: hidden;
+            & > a{
+                color: #999;   
+            }
+        }
+    
 }

@@ -1,6 +1,7 @@
 .meunlits{
     overflow: hidden;
 }
+
 .manufacturer{
     width: 357px;
     float: left;
@@ -37,6 +38,23 @@
         z-index: 3;
         color: #666;
 
+    }
+}
+.GC-top{
+    padding-bottom: 58px;
+    &::after{
+        content: " ";
+        display: table;
+    }
+    & > a{
+        display: inline-block;
+        line-height: 1;
+        margin-left: 30px;
+        padding-top: 14px;
+        float: right;  
+        &:hover{
+        color:  #b4a078;
+    }
     }
 }
 .name{
