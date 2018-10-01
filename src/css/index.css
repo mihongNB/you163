@@ -12,13 +12,6 @@ li {
   font-family: "Microsoft Yahei","微软雅黑",verdana;
   color: #333; }
 
-.name {
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 1;
-  float: left;
-  margin-right: 20px; }
-
 .tb {
   height: 36px;
   line-height: 36px;
@@ -243,8 +236,93 @@ li {
   width: 19px;
   background: url(../images/logo1.png) 0 -51px no-repeat; }
 
-.GC-top {
-  padding-bottom: 20px; }
+.meunlits {
+  overflow: hidden; }
+
+.manufacturer {
+  width: 357px;
+  float: left;
+  margin-left: 10px;
+  overflow: hidden;
+  position: relative;
+  text-align: center; }
+.manufacturer .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2; }
+.manufacturer img {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  transition: transform 1s;
+  z-index: 1; }
+.manufacturer .price {
+  font-size: 14px;
+  padding-top: 17px;
+  display: inline-block;
+  width: auto;
+  border-top: 1px solid #666;
+  position: relative;
+  z-index: 3;
+  color: #666; }
+
+.name {
+  position: relative;
+  font-size: 24px;
+  margin: 48px 0 19px;
+  line-height: 1;
+  border-right: 0;
+  border-left: 0;
+  z-index: 3;
+  color: #666; }
+.name span {
+  font-size: 24px;
+  color: #666; }
+.name .newShelfTag {
+  position: absolute;
+  top: -3px;
+  font-size: 11px;
+  margin-left: 2px;
+  text-align: center;
+  line-height: 19px;
+  width: 32px;
+  height: 21px;
+  color: #fff;
+  background: url(../images/shangxinbg.png) 0 0 no-repeat; }
+
+.large {
+  height: 320px; }
+
+.first {
+  margin-left: 0; }
+
+.last {
+  margin-top: 10px; }
+
+.middle {
+  width: 357px;
+  margin-left: 9px !important; }
+
+.small {
+  height: 155px; }
+.small .name {
+  font-size: 20px;
+  margin: 32px 0 10px 20px;
+  text-align: left; }
+.small .price {
+  padding-top: 10px;
+  margin-left: 20px;
+  float: left; }
+
+.newstar {
+  height: 510px;
+  padding-top: 60px; }
 
 .f-t {
   padding-top: 60px;

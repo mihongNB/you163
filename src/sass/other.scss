@@ -1,0 +1,42 @@
+@charset "utf-8";
+// 品牌制造商公共部分
+.m-head-top{
+    padding-bottom: 50px;
+    &::after{
+        content: " ";
+        display: table;
+    }
+    & > a{
+        display: inline-block;
+        line-height: 1;
+        margin-left: 30px;
+        padding-top: 14px;
+        float: right;  
+        &:hover{
+        color:  #b4a078;
+    }
+    }
+   
+}
+.main-head-name{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+    float: left;
+    margin-right: 20px;
+    & > a:hover{
+        color:  #b4a078;
+    }
+}
+.f-left{
+    float: left;
+}
+.f-size{
+    font-size: 14px;
+}
+.font-name{
+    padding-top: 13px;
+    display: inline-block;
+    line-height: 1;
+}
+// 新品首发公共部分
