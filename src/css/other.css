@@ -2,7 +2,7 @@
   transform: scale(1.05); }
 
 .m-head-top {
-  padding-bottom: 28px;
+  padding-bottom: 15px;
   overflow: hidden; }
 .m-head-top::after {
   content: " ";

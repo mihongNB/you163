@@ -12,6 +12,27 @@ li {
   font-family: "Microsoft Yahei","微软雅黑",verdana;
   color: #333; }
 
+.wrap {
+  width: 1090px;
+  margin: 0 auto; }
+
+.popularwrap {
+  /* background: blueviolet; */
+  /* height: 698px; */
+  overflow: hidden; }
+
+.homewrap {
+  height: 789px; }
+
+.expertwrap {
+  height: 428px; }
+
+.banner {
+  height: 420px;
+  background-image: url(https://yanxuan.nosdn.127.net/5fcf25b19670b72157003f09d4229c87.jpg?imageView&quality=95&thumbnail=1920x420);
+  background-size: contain;
+  background-repeat: no-repeat; }
+
 .tb {
   height: 36px;
   line-height: 36px;
@@ -127,6 +148,7 @@ li {
   color: #333; }
 
 .jujia .icon-jiao {
+  display: none;
   position: absolute;
   top: 21px;
   left: 22.5px;
@@ -136,6 +158,7 @@ li {
   width: 27px; }
 
 .subnav {
+  display: none;
   width: 724px;
   top: 15px;
   left: -70px;
@@ -708,6 +731,125 @@ li {
   padding: 54px 0 52px;
   height: 526px;
   background-color: #f4f0ea; }
+
+.indexgoods {
+  margin-top: 60px; }
+
+.homebanner {
+  margin-bottom: 20px; }
+
+.itemlist {
+  margin-left: -10px; }
+.itemlist .list {
+  float: left;
+  margin: 0 10px 50px 0;
+  width: 265px; }
+
+.expert {
+  padding-bottom: 80px; }
+
+.m-expert {
+  float: left;
+  margin-left: 10px; }
+.m-expert .frist {
+  margin-left: 0;
+  width: 690px; }
+.m-expert .small {
+  width: 390px; }
+
+.Last {
+  margin-top: 40px; }
+
+.bg-banner {
+  width: 100%;
+  height: 600px;
+  background: center no-repeat; }
+
+.m-loginbox {
+  padding-top: 83px;
+  margin-left: 703px;
+  width: 386px;
+  height: 458px; }
+.m-loginbox .m-loginbox-l {
+  width: 386px;
+  height: 458px;
+  background: #fff;
+  border: 1px solid #F5F3EF;
+  position: relative; }
+
+.login-head {
+  position: absolute;
+  overflow: hidden;
+  padding: 30px 0 10px;
+  left: 45px;
+  font-size: 18px; }
+
+.yx-split {
+  width: 1px;
+  height: 20px;
+  background: #ddd;
+  margin-left: 55px; }
+
+.headTitle-1 {
+  margin-left: 10px;
+  color: #333;
+  cursor: pointer; }
+
+.headTitle-2 {
+  margin-left: 55px;
+  cursor: pointer;
+  color: #999; }
+.headTitle-2:hover {
+  color: #B4A078; }
+
+.yx-l-left {
+  float: left; }
+
+.m-cnt {
+  width: 300px;
+  height: 260px;
+  margin: 70px auto;
+  padding: 0;
+  padding-top: 10px; }
+.m-cnt .inputbox {
+  overflow: hidden; }
+.m-cnt .inputbox input {
+  float: left;
+  width: 298px !important;
+  border: 1px solid #e8e8e8;
+  line-height: 36px;
+  border-radius: 2px;
+  height: 36px;
+  line-height: 36px;
+  padding-left: 8px;
+  width: 214px;
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: 30px;
+  color: #333;
+  overflow: hidden; }
+
+.f-cb {
+  margin-top: 40px; }
+.f-cb a {
+  display: block;
+  width: 100%;
+  height: 48px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  background: #b4a078;
+  font-size: 18px;
+  line-height: 48px;
+  border-radius: 2px; }
+
+.reg {
+  font-size: 13px;
+  color: #999;
+  float: right;
+  padding-top: 10px; }
+.reg a:hover {
+  color: #b4a078; }
 
 .f-t {
   padding-top: 60px;

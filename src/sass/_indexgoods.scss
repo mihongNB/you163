@@ -1,0 +1,14 @@
+.indexgoods{
+    margin-top: 60px;
+}
+.homebanner{
+    margin-bottom: 20px;
+}
+.itemlist{
+    margin-left: -10px;
+    & .list{
+        float: left;
+        margin: 0 10px 50px 0;
+        width: 265px;
+    }
+}

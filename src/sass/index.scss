@@ -13,7 +13,40 @@ li{
     font-family: "Microsoft Yahei","微软雅黑",verdana;
     color: #333;
 }
+.wrap {
+    width: 1090px;
+    margin: 0 auto;
+}
 
+
+
+
+.popularwrap {
+    /* background: blueviolet; */
+    /* height: 698px; */
+    overflow: hidden;
+}
+
+
+
+
+
+.homewrap {
+    height: 789px;
+
+}
+
+.expertwrap {
+    height: 428px;
+}
+
+.banner {
+
+    height: 420px;
+    background-image: url(https://yanxuan.nosdn.127.net/5fcf25b19670b72157003f09d4229c87.jpg?imageView&quality=95&thumbnail=1920x420);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
 @import "header";
 @import "creat";
@@ -21,4 +54,7 @@ li{
 @import "popular";
 @import "sale";
 @import "welfare";
+@import "indexgoods";
+@import "expert";
+@import "login";
 @import "footer";
