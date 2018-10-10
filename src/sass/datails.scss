@@ -1,0 +1,186 @@
+.detailHD{
+    overflow: hidden;
+}
+.m-slide {
+    float: left;
+    width: 524px;
+    overflow: hidden;
+}
+.m-slide .view {
+    position: relative;
+    float: left;
+    width: 430px;
+    height: 430px;
+    border: 1px solid #e8e8e8;
+    margin-right: 16px;
+}
+.m-slide .view img{
+    display: block;
+    width: 428px;
+    height: 428px;
+    background-color: #f4f4f4;
+}
+.detailist{
+    float: right;
+    overflow: hidden;
+    & li{
+        zoom: 1;
+        width: 78px;
+        height: 78px;
+        overflow: hidden;
+        margin-bottom: 10px;
+        vertical-align: top;
+        & > a{
+            display: block;
+            width: 78px;
+            height: 78px;
+            border: 1px solid #e8e8e8;
+        }
+    }
+}
+.m-info{
+    float: right;
+    width: 566px;
+    padding-left: 62px;
+    word-break: break-all;
+    word-wrap: break-word;
+    position: relative;
+    & hr{
+        margin: 10px 20px 10px 10px;
+        overflow: hidden;
+        border: none;
+        height: 1px;
+        border-bottom: 1px dashed #d2d2d2;
+    }
+}
+.m-info .intro {
+    overflow: hidden;
+    margin-bottom: 20px;
+    & .detailTag{
+        overflow: hidden;
+        display: inline-block;
+        margin-bottom: 10px;
+        & .newTag{
+            line-height: 18px;
+            float: left;
+            margin-right: 10px;
+            background-color: #b4a078;
+            border: 1px solid #b4a078;
+            border: 1px solid rgba(180,160,120,.3);
+            height: 20px;
+            line-height: 20px;
+            color: #fff;
+            padding: 0 5px;
+            font-size: 12px;
+        }
+    }
+}
+.detailname{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-bottom: 7px;
+    position: relative;
+    & > span{
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 20px;
+        margin-bottom: 7px;
+    }
+}
+.desc{
+    width: 300px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #999;
+}
+.u-price{
+    background-color: #f5f3ef;
+    border-top: 1px dotted #dedede;
+    border-bottom: 1px dotted #dedede;
+    padding: 0 0 13px;
+    line-height: 24px;
+    font-size: 13px;
+    position: relative;
+    overflow: hidden;
+}
+.pBox{
+    height: 45px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.field{
+    margin-bottom: 3px;
+}
+.label{
+    width: 55px;
+    font-size: 13px;
+    float: left;
+    color: #666;
+    margin-left: 10px;
+}
+.label-1{
+    line-height: 30px;
+
+}
+.label-2{
+    line-height: 28px;
+}
+.rp{
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 1px;
+    margin-top: 13px;
+    margin-left: 0;
+    height: 30px;
+    & .rmb{
+        margin-left: 0;
+        line-height: 30px;
+        color: #d7282d;
+        font-size: 18px;
+    }
+    & .rp-num{
+        font-size: 28px;
+        line-height: 30px;
+        margin-left: 2px;
+        color: #d7282d;
+    }
+}
+.sale{
+    margin-top: 2px;
+}
+.saleLine{
+    margin-left: 65px;
+    height: 28px;
+}
+.activityType{
+    position: relative;
+    margin-right: 10px;
+    font-size: 12px;
+    left: 0;
+    top: -1px;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    color: #fff;
+    padding: 0 5px;
+    background-color: #e36844;
+}
+.pointCt{
+    color: #666;
+}
+.policyBox {
+    margin-left: 65px;
+    padding-top: 2px;
+    line-height: 20px;
+    width: 401px;
+    & > span{
+        color: #666;
+    }
+    
+}
+.server {
+    margin-top: 1px;
+    float: left;
+}

@@ -1,0 +1,66 @@
+.banner {
+    width: 100%;
+    height: 420px!important;
+    overflow: hidden;
+    margin-bottom: 30px;
+    position: relative;
+}
+.banner img {
+   display: block;  
+   height: 420px!important;
+    position: absolute;
+    left: -280px;
+}
+
+.banner ul li {
+    opacity: 1;
+    transition: all 0.8s;
+}
+.banner ol {
+    position: absolute;
+    right:50%;
+    margin-right: -112px;
+    bottom: 10px;
+}
+.banner ol li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #cecece;
+    border-radius: 50%;
+    background: #fff;
+    margin-right: 15px;
+    text-indent: -99em;
+    cursor: pointer;
+    
+}
+.banner ol li.active {
+    box-shadow: 0 0 0 4px #dfcead;
+    background: #a7936e;
+}
+.banner>a {
+    display: block;
+    position: absolute;
+    z-index: 9;
+    top: 200px!important;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    opacity: 80;
+    background-color: #D0C4AF;
+    border-radius: 50%;
+   
+}
+.leftbtn:hover,.rightbtn:hover {
+   background-color: #B19E7A;
+}
+.banner .leftbtn {
+    left: 100px;
+    background-image: url(../images/xiaotubiao.png);
+    background-position: 0 -4984px;
+}
+.banner .rightbtn {
+    right: 100px;
+    background-image: url(../images/xiaotubiao.png);
+    background-position: 0 -5164px;
+}

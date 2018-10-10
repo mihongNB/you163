@@ -123,7 +123,8 @@ background: url(../images/logo1.png) 0 0 no-repeat;
         font-size: 14px;
         &:hover > a{
             color: #b4a078;
-            border-bottom: 3px solid #b4a078;    display: block;
+            border-bottom: 3px solid #b4a078;  
+              display: block;
             padding-bottom: 6px;
         }
     }
@@ -131,6 +132,15 @@ background: url(../images/logo1.png) 0 0 no-repeat;
         font-family: "Microsoft Yahei",verdana;
         color: #333;
     }
+}
+.nav-fix{
+    position: fixed;
+    top:0;
+    z-index: 999;
+    height: 60px;
+    line-height: 35px;
+    background: #fff;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,.2);
 }
 
 //--------------------------- 二级导航
@@ -143,17 +153,20 @@ background: url(../images/logo1.png) 0 0 no-repeat;
     background-position: 0 -116px;
     height: 26px;
     width: 27px;
+    z-index: 88;
     
 
 }
 .subnav{
     display: none;//--------------------------------------------
     width: 724px;
+    position: absolute;
     top: 15px;
     left: -70px;
     right: auto;
     padding-top: 30px;
     background-color: transparent;
+    z-index: 89;
     & .subnav-list{
         overflow: hidden;
         padding: 20px 40px 30px;

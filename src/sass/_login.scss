@@ -56,7 +56,7 @@
     // background-color: #fff000;
     & .inputbox{
         overflow: hidden;
-        & input{
+        & .login{
         float: left;
         width: 298px !important;
         border: 1px solid #e8e8e8;
@@ -72,11 +72,27 @@
             color: #333;
             overflow: hidden;
         }
+        & .reginput{
+            float: left;
+            width: 200px !important;
+            border: 1px solid #e8e8e8;
+            line-height: 36px;
+            border-radius: 2px;
+                height: 36px;
+                line-height: 36px;
+                padding-left: 8px;
+                width: 214px;
+                font-size: 14px;
+                font-weight: normal;
+                margin-top: 30px;
+                color: #333;
+                overflow: hidden;
+        }
     }
 }
 .f-cb{
     margin-top: 40px;
-    & a{
+    & #submitBtn{
         display: block;
         width: 100%;
         height: 48px;
@@ -87,6 +103,7 @@
         font-size: 18px;
         line-height: 48px;
         border-radius: 2px;
+        border: 0;
     }
 }
 .reg{
