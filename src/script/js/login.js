@@ -27,4 +27,11 @@
             }
         })
     });
+    var $btn = $('.yx-l');
+    var $content = $('.inputop');
+    // alert($content.length)
+    $btn.on('click', function () {
+        $(this).addClass('active').siblings('.yx-l').removeClass('active');
+        $content.eq($(this).index()).hide().siblings('.inputop').show()
+    });
 }(jQuery);

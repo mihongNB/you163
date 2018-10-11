@@ -22,26 +22,34 @@
             <div class="m-loginbox">
                 <div class="m-loginbox-l">
                     <div class="login-head">
-                        <div class="headTitle-1 yx-l-left phonelogin">手机号登录</div>
-                        <div class="yx-split yx-l-left">&nbsp;</div>
-                        <div class="headTitle-2 yx-l-left maillogin">邮箱登录</div>
+                        <div class="headTitle-1 yx-l-left yx-l phonelogin">用户登录</div>
+                        <!-- <div class="yx-split yx-l-left">&nbsp;</div>
+                        <div class="headTitle-2 yx-l-left yx-l maillogin">邮箱登录</div> -->
                     </div>
                     <div class="m-cnt">
                         <div id="error"></div>
 
                         <form id="loginform" method="post" onsubmit="return false;">
-                            <div class="inputbox">
+                            <div class="userlogin">
+                                <div class="inputbox inputop">
 
-                                <!-- <div class="u-input box"> -->
-                                <input class="login" id="username" name="username" type="text" autocomplete="off" placeholder="输入用户名">
+                                    <!-- <div class="u-input box"> -->
+                                    <input class="login username" id="username" name="username" type="text" autocomplete="off" placeholder="输入用户名">
+                                </div>
+                                <div class="inputbox inputop" style="display:none">
+                                    <input class="login username" id="email" name="email" type="text" autocomplete="off" placeholder="输入邮箱">
+                                </div>
                                 <!-- </div> -->
-                            </div>
-                            <div class="inputbox">
 
-                                <!-- <div class="u-input box"> -->
+                                <div class="inputbox">
 
-                                <input class="login" id="password" name="password" type="password" placeholder="输入密码">
-                                <!-- </div> -->
+                                    <!-- <div class="u-input box"> -->
+
+                                    <input class="login" id="password" name="password" type="password" placeholder="输入密码">
+                                    <!-- </div> -->
+                                </div>
+
+
                             </div>
                             <div class="f-cb">
                                 <input id="submitBtn" type="button" name="submit" value=" 登录  " />
