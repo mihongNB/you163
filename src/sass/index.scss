@@ -17,31 +17,15 @@ li{
     width: 1090px;
     margin: 0 auto;
 }
-
-
-
-
 .popularwrap {
-    /* background: blueviolet; */
-    /* height: 698px; */
     overflow: hidden;
 }
-
-
-
-
-
 .homewrap {
     height: 789px;
-
 }
-
 .expertwrap {
     height: 428px;
 }
-
-
-
 @import "header";
 @import "banner";
 @import "creat";
@@ -54,3 +38,4 @@ li{
 @import "login";
 @import "datails";
 @import "footer";
+@import "fixedTool";

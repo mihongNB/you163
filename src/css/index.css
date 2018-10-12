@@ -17,8 +17,6 @@ li {
   margin: 0 auto; }
 
 .popularwrap {
-  /* background: blueviolet; */
-  /* height: 698px; */
   overflow: hidden; }
 
 .homewrap {
@@ -1443,5 +1441,95 @@ li {
   top: -4px; }
 .f-b-bot > a img {
   width: 100%; }
+
+.yx-cp-fixedtool {
+  position: fixed;
+  top: 30px;
+  z-index: 99;
+  right: 0; }
+
+.yx-fixedtoolActivityEntry {
+  position: absolute;
+  top: -153px; }
+
+.yx-fixedtoolActivityPic {
+  width: 72px; }
+
+.yx-cp-base img {
+  border: 0;
+  vertical-align: top; }
+
+.yx-fixedtoolNewuser, .yx-fixTool-downloadQrcode, .yx-fixedtoolSubscribe, .yx-fixedtoolCustomerService, .yx-fixedtoolGoTop {
+  display: block;
+  width: 72px;
+  height: 82px;
+  background-color: #fff;
+  color: #666;
+  text-align: center;
+  line-height: 1;
+  cursor: pointer;
+  padding-top: 14px;
+  position: relative;
+  border-bottom: 1px solid #eaeaea; }
+
+.yx-fixedtoolNewuser:hover .icon-yxfixedtool-newuser {
+  background-position: 0 -258px; }
+.yx-fixedtoolNewuser:hover .yx-fixedtoolText {
+  color: #b4a078; }
+
+.yx-cp-icon-yxfixedtool {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  font-size: 12px;
+  word-spacing: normal;
+  letter-spacing: normal; }
+
+.icon-yxfixedtool-newuser {
+  background-image: url(../images/fixtool.png);
+  background-position: 0 -297px;
+  height: 29px;
+  width: 28px; }
+
+.yx-fixedtoolText {
+  line-height: 20px;
+  font-size: 14px;
+  margin: 8px auto 0;
+  position: relative; }
+
+.yx-fixTool-downloadQrcode {
+  text-align: center;
+  font-size: 12px;
+  height: 130px;
+  position: relative;
+  z-index: 5; }
+.yx-fixTool-downloadQrcode i {
+  background-image: url(../images/xiazai.png); }
+
+.yx-fixTool-downloadQrcode .yx-fixedtool-downText1 {
+  line-height: 17px;
+  color: #666; }
+
+.yx-fixedtool-downText2 {
+  line-height: 17px;
+  color: #BC3B3B; }
+
+.icon-yxfixedtool-subscribe {
+  background-image: url(../images/fixtool.png);
+  background-position: 0 -425px;
+  height: 26px;
+  width: 26px; }
+
+.icon-yxfixedtool-customerService {
+  background-image: url(../images/fixtool.png);
+  background-position: 0 -87px;
+  height: 31px;
+  width: 32px; }
+
+.icon-yxfixedtool-goTop {
+  background-image: url(../images/fixtool.png);
+  background-position: 0 -233px;
+  height: 15px;
+  width: 24px; }
 
 /*# sourceMappingURL=index.css.map */

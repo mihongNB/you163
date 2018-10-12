@@ -1,5 +1,6 @@
 //1.导入模块的公用部分
 !function ($) {
+    // ---------------------------导入头部--------------------------
     $('.header').load('header.html', function () {
         $('.tb-nav .jujia').on('mouseover', function () {
             $('.jujia .icon-jiao').show();
@@ -42,7 +43,24 @@
             $('.registor').show();
         });
     })
-    $('.footer').load('footer.html');
+    // -------------------------------导入尾部-------------------------------
+    $('.footer').load('footer.html', function () {
+
+        $(window).on('scroll', function () {
+            var $scrolltop = ($(window).scrollTop());
+            if ($scrolltop >= 700) {
+                $('.yx-fixedtoolGoTop').show();
+            } else {
+                $('.yx-fixedtoolGoTop').hide();
+            }
+        });
+        $('.yx-fixedtoolGoTop').on('click', function () {
+            $('html,body').animate({
+                scrollTop: 0
+            });
+        });
+
+    });
 }(jQuery);
 !function ($) {
     var $btn = $('.item');
