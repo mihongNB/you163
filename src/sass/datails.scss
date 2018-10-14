@@ -212,24 +212,31 @@
     position: relative;
     width: 438px;
     float: left;
-    & .tab-con {
+}
+    .tab-con {
         float: left;
         position: relative;
         margin-right: 10px;
         margin-bottom: 15px;
         vertical-align: middle;
         padding: 1px;
-        & .tab-txt {
+        border: 1px solid #ddd;
+        border-radius: 3px;
+    }
+     .tab-txt {
             padding: 0 16px;
             line-height: 28px;
             font-size: 12px;
             color: #333;
             overflow: hidden;
         }
-    }
+    
+
+.tab-sale{
+    border: 1px solid #b4a078;
 }
 .tab {
-    border: 1px solid #ddd;
+    
     float: left;
     cursor: pointer;
     position: relative;
@@ -338,3 +345,70 @@
 .w-icon-normal{
     background-image: url(../images/xx.png)
 }
+#salenum input {
+    box-sizing: border-box;
+    border-radius: 0;
+    border: 0;
+    width: 60px;
+    margin: 0;
+    font-size: 12px;
+    text-align: center;
+    color: #333;
+    position: relative;
+    float: left;
+    // width: 36px;
+    height: 30px;
+    line-height: 28px;
+    background: #fff;
+}
+.less,.more {
+    border-right: 1px solid #ddd;
+    position: relative;
+    float: left;
+    width: 36px;
+    height: 30px;
+    line-height: 28px;
+    background: #fff;
+    cursor: pointer;
+}
+ .z-dis {
+    cursor: not-allowed;
+}
+ .hx,.sx {
+    background: #d3d3d3;
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    overflow: hidden;
+    background: #999;
+
+ }
+    .hx {
+        top: 15px;
+        left: 12px;
+        width: 10px;
+    }
+
+    .u-selnum {
+        border: 1px solid #ddd;
+        overflow: hidden;
+        float: left;
+    }
+    .u-selnum .more {
+        border-left: 1px solid #ddd;
+        cursor: pointer;
+    }
+//  .less {
+        
+//     }
+
+    .sx {
+        position: absolute;
+        width: 2px;
+        height: 2px;
+        overflow: hidden;
+        background: #999;
+        top: 11px;
+        left: 16px;
+        height: 10px;
+    }

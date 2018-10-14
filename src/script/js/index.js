@@ -42,20 +42,38 @@
             $('.login').show();
             $('.registor').show();
         });
+        /************购物车*********购物车******购物车**********************/
+        $('.yx-cp-deleteItem').on('click', function (ev) {
+            $('.yx-cp-m-miniCart').hide();
+        });
+        var $cartNum = $('.cart').find('span').html();
+        if ($cartNum == 0) {
+            $('.cart').hover(function () {
+                $('.yx-cp-m-miniCart').show();
+            }, function () {
+                $('.yx-cp-m-miniCart').hide();
+
+            })
+        };
+
     })
     // -------------------------------导入尾部-------------------------------
     $('.footer').load('footer.html', function () {
 
         $(window).on('scroll', function () {
             var $scrolltop = ($(window).scrollTop());
-            if ($scrolltop >= 700) {
-                $('.yx-fixedtoolGoTop').show();
+            if ($scrolltop >= 100) {
+                $('.yx-fixedtoolGoTop').css({
+                    'visibility': 'visible'
+                });
             } else {
-                $('.yx-fixedtoolGoTop').hide();
+                $('.yx-fixedtoolGoTop').css({
+                    'visibility': 'hidden'
+                });
             }
         });
         $('.yx-fixedtoolGoTop').on('click', function () {
-            $('html,body').animate({
+            $('html').animate({
                 scrollTop: 0
             });
         });
@@ -63,12 +81,15 @@
     });
 }(jQuery);
 !function ($) {
+
     var $btn = $('.item');
     var $content = $('.listbox1');
     $btn.on('click', function () {
         $(this).addClass('active').siblings('.item').removeClass('active');
         $content.eq($(this).index()).show().siblings('.listbox1').hide();
     });
+
+
 }(jQuery);
 !function ($) {
     // 轮播数据
@@ -130,6 +151,7 @@
                 rightBtn.onclick();
             }, 2000)
         }
+
     })
 }(jQuery);
 // ------------------------------商品拼接----------------------------------
@@ -258,65 +280,116 @@
         $($Mimglist).on('mouseover', function (ev) {
             $($Mimglist).eq($(this).index()).addClass('z-active').siblings($($Mimglist)).removeClass('z-active')
             $($imglist).eq($(this).index()).show().siblings($($imglist)).hide();
-        })
-    });
-}(jQuery);
-!function ($) {
-    $(function () {
-        $('#regform').validate({
-            rules: {
-                username: {
-                    required: true,
-                    minlength: 2,
-                    maxlength: 10,
-                    remote: {//将前端的name给后端
-                        url: "http://10.31.162.113/skz/you163/php/reg.php",     //后台处理程序
-                        type: "post"               //数据发送方式
-                    }
-                },
-                password: {
-                    required: true,
-                    minlength: 6
-                },
-                repass: {
-                    required: true,
-                    equalTo: '#password'
-                },
-                email: {
-                    required: true,
-                    email: true
-                }
-            },
-            messages: {
-                username: {
-                    required: '用户名不能为空',
-                    minlength: '用户名不能小于2',
-                    maxlength: '用户名不能大于10',
-                    remote: '用户名已存在'
-                },
-                password: {
+        });
+        var $seletorsize = $('.sizetabs').children('.tab-con');
+        $seletorsize.on('click', function (ev) {
+            $(this).addClass('tab-sale').siblings($seletorsize).removeClass('tab-sale')
+        });
+        var $seletorcolor = $('.tabs').children('.tab-con');
+        $seletorcolor.on('click', function (ev) {
+            $(this).addClass('tab-sale').siblings($seletorcolor).removeClass('tab-sale')
+        });
+        $('.more').on('click', function (ev) {
+            var $count = $('.u-selnum input').val()
 
-
-                    required: '密码不能为空',
-                    minlength: '密码不能小于6'
-                },
-                repass: {
-                    required: '密码重复不能为空',
-                    equalTo: '密码不一致，请重新输入'
-                },
-                email: {
-                    required: '电子邮箱不能为空',
-                    email: '你输入的格式有误'
-                }
+            $count++;
+            $('.u-selnum input').val($count);
+        });
+        $('.less').on('click', function (ev) {
+            var $count = $('.u-selnum input').val()
+            if ($('.u-selnum input').val() <= 1) {
+                $('.u-selnum input').val(1);
+            } else {
+                $count--;
+                $('.u-selnum input').val($count);
             }
         });
+
     });
-    $.validator.setDefaults({
-        /*添加校验成功后的执行函数--修改提示内容，并为正确提示信息添加新的样式(默认是valid)*/
-        success: function (div) {
-            div.html('√').css({ 'color': 'green' }).addClass('valid');
+
+    // $(document).ready(function () {
+    //     $.ajax({
+    //         type: 'post',
+    //         url: 'http://10.31.162.113/skz/you163/php/goodlist.php',
+    //         dataType: 'json'
+    //     }).done(function (data) {
+    //         console.log(data)
+    //     })
+    var $bstop = true;
+    $('.j-button-addCart').on('click', function (ev) {
+        if ($bstop) {
+            $('.yx-cp-m-miniCart').animate({
+                opacity: "show"
+            }, 500);
+            $bstop = false
+        } else {
+            $('.yx-cp-m-miniCart').animate({
+                opacity: "hide"
+            }, 500);
+            $bstop = true
         }
-    });
+
+        //         // alert(data.price * $('.u-selnum input').val())
+        //     })
+        // })
+
+    }(jQuery);
+    !function ($) {
+        $(function () {
+            $('#regform').validate({
+                rules: {
+                    username: {
+                        required: true,
+                        minlength: 2,
+                        maxlength: 10,
+                        remote: {//将前端的name给后端
+                            url: "http://10.31.162.113/skz/you163/php/reg.php",     //后台处理程序
+                            type: "post"               //数据发送方式
+                        }
+                    },
+                    password: {
+                        required: true,
+                        minlength: 6
+                    },
+                    repass: {
+                        required: true,
+                        equalTo: '#password'
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    }
+                },
+                messages: {
+                    username: {
+                        required: '用户名不能为空',
+                        minlength: '用户名不能小于2',
+                        maxlength: '用户名不能大于10',
+                        remote: '用户名已存在'
+                    },
+                    password: {
 
 
-}(jQuery);
+                        required: '密码不能为空',
+                        minlength: '密码不能小于6'
+                    },
+                    repass: {
+                        required: '密码重复不能为空',
+                        equalTo: '密码不一致，请重新输入'
+                    },
+                    email: {
+                        required: '电子邮箱不能为空',
+                        email: '你输入的格式有误'
+                    }
+                }
+            });
+        });
+        $.validator.setDefaults({
+            /*添加校验成功后的执行函数--修改提示内容，并为正确提示信息添加新的样式(默认是valid)*/
+            success: function (div) {
+                div.html('√').css({ 'color': 'green' }).addClass('valid');
+            }
+        });
+
+
+    }(jQuery);

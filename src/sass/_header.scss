@@ -294,3 +294,163 @@ background: url(../images/logo1.png) 0 0 no-repeat;
         background: url(../images/logo1.png) 0 -51px no-repeat;
         }
 }
+.yx-cp-m-miniCart {
+    position: absolute;
+    right: -32px;
+    top: 25px;
+    z-index: 1;
+    padding-top: 10px;
+    padding-right: 10px;
+    overflow: visible;
+}
+.yx-cp-m-miniCart .yx-cp-wrap {
+    position: relative;
+    width: 330px;
+    height: 328px;
+    border: 1px solid #b5a176;
+    border-top: 2px solid #d7ccb6;
+    background-color: #fff;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,.2);
+}
+.yx-cp-m-miniCart .yx-cp-tw-1 {
+    position: absolute;
+    right: 22px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    top: -8px;
+    border-bottom: 8px solid #b5a176;
+
+}
+.yx-cp-m-miniCart .yx-cp-tw-2 {
+    position: absolute;
+    right: 22px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    top: -6px;
+    border-bottom: 8px solid #fff;
+}
+.yx-cp-m-miniCart .yx-cp-wrap .yx-cp-cartInfo {
+    margin: 14px 0 0;
+    height: 245px;
+    background-color: #fff;
+    overflow: auto;
+}
+.yx-cp-m-miniCart .yx-cp-wrap .yx-cp-cartInfo .yx-cp-cartInfo-inner {
+    background-color: #e8e8e8;
+}
+.yx-cp-cartItem {
+    height: 70px;
+    padding: 0 0 10px 15px;
+    background-color: #fff;
+
+}
+.yx-cp-m-miniCart .yx-cp-wrap .yx-cp-cartInfo .yx-cp-item {
+    float: left;
+    margin-left: 15px;
+}
+.yx-cp-item-left {
+    background-color: #f4f4f4;
+    position: relative;
+    text-align: center;
+}
+.yx-cp-item-middle p:first-child {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 12px 0 11px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.yx-cp-wrap .yx-cp-cartInfo .yx-cp-item-middle .yx-cp-count , .yx-cp-m-miniCart .yx-cp-wrap .yx-cp-cartInfo .yx-cp-item-middle .yx-cp-specValue {
+    display: block;
+    color: #999;
+    font-size: 11px;
+    line-height: 12px;
+    font-weight: normal;
+    float: left;
+}
+.yx-cp-count > b{
+    display: block;
+    color: #999;
+    font-size: 11px;
+    line-height: 12px;
+    font-weight: normal;
+    float: left;
+}
+.yx-cp-m-miniCart .yx-cp-wrap .yx-cp-cartInfo .yx-cp-item-right .yx-cp-price {
+    width: 60px;
+    text-align: right;
+    font-size: 11px;
+    margin-top: 14px;
+    line-height: 11px;
+    float: left;
+    & > b >b{
+        font-weight: normal;
+        
+    }
+}
+.yx-cp-m-miniCart .yx-cp-wrap .yx-cp-cartInfo .yx-cp-item-middle .yx-cp-count {
+    margin-left: 14px;
+    margin-top: 1px;
+}
+.yx-cp-m-miniCart .yx-cp-wrap .yx-cp-cartInfo .yx-cp-item-middle {
+    width: 130px;
+    margin-left: 10px;
+}
+.icon-yxclose-close11 {
+    display: inline-block;
+    background-position: 0 -40px;
+    height: 10px;
+    width: 11px;
+}
+.yx-cp-icon-yxclose {
+    background-image: url(../images/x.png);
+    background-repeat:no-repeat;
+}
+.yx-cp-m-miniCart .yx-cp-wrap .yx-cp-cartInfo .yx-cp-item-right .yx-cp-deleteItem {
+    margin: 14px 0 0 10px;
+    line-height: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+.yx-cp-m-miniCart .yx-cp-wrap .yx-cp-cartBottom {
+    height: 66px;
+    background-color: #f4f0ea;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.yx-cp-m-miniCart .yx-cp-wrap .yx-cp-cartBottom .yx-cp-totalPrice {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 12px 0 0 15px;
+    color: #BE4141;
+    float: left;
+}
+.yx-cp-m-miniCart .yx-cp-wrap .yx-cp-cartBottom .yx-cp-goToCart {
+    float: right;
+    margin-right: 31px;
+}.yx-cp-m-miniCart .yx-cp-wrap .yx-cp-cartBottom .yx-cp-goToCart .yx-cp-btn {
+    width: 110px;
+    height: 36px;
+    line-height: 36px;
+    margin-top: 15px;
+    display: block;
+    border-radius: 2px;
+    text-align: center;
+   
+}
+.yx-w-button-primary {
+    color: #fff;
+    border: 1px solid #b4a078;
+    background-color: #b4a078;
+    &:hover{
+        color: #fff;
+        border: 1px solid #c0ae8a;
+        background-color: #c0ae8a;
+    }
+}
